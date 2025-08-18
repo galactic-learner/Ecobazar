@@ -128,7 +128,7 @@ body {
   align-items: center;
   line-height: 0px;
 }
-#secondary_heading .shop_bag {
+#secondary_heading .shopping_bag {
   display: flex;
   position: relative;
 }
@@ -169,10 +169,68 @@ body {
   position: absolute;
   left: 15px;
 }
-#secondary_heading .heart{
-  border-right: 1px solid;
-  
+#secondary_heading .bar {
+  width: 2px;
+  height: 24px;
+  background-color: #cccccc;
+  margin: 0 16px;
+}
+/* ================ CSS heading 2 END ================ */
+
+/* ================ CSS navigation START ================ */
+#nav .category_bar {
+  /* background-color: red; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0%;
+  background-color: #00b207;
+  border: none;
+}
+#nav li {
+  /* background-color: red; */
+  display: inline-flex;
+  align-items: center;
 }
 
-
-/* ================ CSS heading 2 END ================ */
+#nav .dropdown-toggle::after {
+  display: none;
+}
+#nav .main_text {
+  margin: 0 8px;
+  padding: 8px 0;
+}
+#nav .dropdown-menu.show {
+  border-radius: 0%;
+  width: 100%;
+  border: none;
+  background: #f5f1f1;
+}
+#nav .dropdown-menu.show .dropdown-item {
+  padding: 8px 10px;
+}
+#nav .dropdown-link {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  display: inline-flex;
+  line-height: 0px;
+  align-items: center;
+}
+#nav .phone {
+  /* background-color: red; */
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+  line-height: 0px;
+}
+#nav .phone a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray---900);
+  margin-left: 5px;
+}
+/* ================ CSS navigation END ================ */

@@ -233,4 +233,21 @@ body {
   color: var(--gray-scale-gray---900);
   margin-left: 5px;
 }
+#nav .mobile_menu_bar{
+  background-color: transparent;
+  margin: 0;
+  padding: 5px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  border-radius: 0%;
+  color: #000;
+}
+
+.offcanvas{
+  max-width: 350px !important;
+  width: 80% !important;
+  /* background-color: red; */
+}
 /* ================ CSS navigation END ================ */

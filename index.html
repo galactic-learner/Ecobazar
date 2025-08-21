@@ -140,25 +140,34 @@
     <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary p-0">
       <div class="container">
 
-        <div class="dropdown">
+        <a href="" class="d-lg-none">
+          <img src="assets/images/logo.png" alt="">
+        </a>
 
-          <button class="btn btn-secondary dropdown-toggle category_bar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>  
-          
-          <span class="main_text">All categories</span>
+        <div class="d-none d-lg-block">
+          <div class="dropdown">
 
-          <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+            <button class="btn btn-secondary dropdown-toggle category_bar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>  
+            
+            <span class="main_text">All categories</span>
+  
+            <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
         </div>
 
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler mobile_menu_bar d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span><iconify-icon icon="gg:menu-right-alt" width="24" height="24"></iconify-icon></span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-0 mb-lg-0">
@@ -212,9 +221,9 @@
                   <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Blog 01</a></li>
-                  <li><a class="dropdown-item" href="#">Blog 02</a></li>
-                  <li><a class="dropdown-item" href="#">Blog 03</a></li>
+                  <li><a class="dropdown-item" href="#">Pages 01</a></li>
+                  <li><a class="dropdown-item" href="#">Pages 02</a></li>
+                  <li><a class="dropdown-item" href="#">Pages 03</a></li>
                 </ul>
               </div>
             </li>
@@ -236,7 +245,90 @@
       </div>
     </nav>
     <!-- navigation end -->
-    
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+        <a href="#">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+                <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home 01</a></li>
+                <li><a class="dropdown-item" href="#">Home 02</a></li>
+                <li><a class="dropdown-item" href="#">Home 03</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shop 01</a></li>
+                <li><a class="dropdown-item" href="#">Shop 02</a></li>
+                <li><a class="dropdown-item" href="#">Shop 03</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pages 01</a></li>
+                <li><a class="dropdown-item" href="#">Pages 02</a></li>
+                <li><a class="dropdown-item" href="#">Pages 03</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+                <span><iconify-icon icon="ep:arrow-down" width="20" height="20"></iconify-icon></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pages 01</a></li>
+                <li><a class="dropdown-item" href="#">Pages 02</a></li>
+                <li><a class="dropdown-item" href="#">Pages 03</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item mobile_menu_last">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item mobile_menu_last">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- offcanvas end -->
 
     <!-- iconify icons -->
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>

@@ -5,9 +5,10 @@
 
   #nav {
     padding: 10px 0 !important;
+    background-color: #fff;
   }
 
-  .offcanvas-body .dropdown-link{
+  .offcanvas-body .dropdown-link {
     background-color: transparent;
     width: 100%;
     margin-bottom: 3px;
@@ -15,40 +16,199 @@
     display: flex;
     justify-content: space-between;
     border: none;
-    
   }
-  .offcanvas-body .nav-item{
+  .offcanvas-body .nav-item {
     border-bottom: 1px solid #cccccc;
-    
   }
-  
+
   .offcanvas-body .dropdown-toggle::after {
     display: none;
   }
-  
-  
-  .offcanvas-body .mobile_menu_last{
+
+  .offcanvas-body .mobile_menu_last {
     padding: 0 13px;
   }
 
-  .offcanvas-body .dropdown-menu.show{
+  .offcanvas-body .dropdown-menu.show {
     width: 100%;
     border-radius: 0%;
     /* background-color: red; */
     padding: 0px;
-
   }
-  
-  .offcanvas-body .dropdown-menu.show li{
+
+  .offcanvas-body .dropdown-menu.show li {
     /* border-bottom: 1px solid #cccccc; */
     padding: 5px;
     background-color: #00b206a4;
     border: none;
-
   }
-  .offcanvas-body .dropdown-menu.show li a{
+  .offcanvas-body .dropdown-menu.show li a {
     color: #000;
   }
+
+  .offcanvas-body {
+    /* background-color: var(--branding-success); */
+    position: relative;
+  }
+  .mobile_sign_parent {
+    /* background: #777; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    padding: 0 10px;
+  }
+
+  .mobile_sign_in {
+    width: 48%;
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px 10px;
+    border-radius: 8px;
+
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--branding-success);
+    color: #fff;
+
+    /* font-size: 16px; */
+    line-height: 2.5;
+  }
+
+  .mobile_sign_in:last-child {
+    background-color: transparent;
+    color: var(--branding-success);
+    outline: 1px solid var(--branding-success);
+  }
+  .mobile_sign_in:last-child:hover {
+    background: var(--branding-success);
+    color: #fff;
+  }
+  .mobile_sign_in:hover {
+    background: transparent;
+    color: var(--branding-success);
+    outline: 1px solid var(--branding-success);
+  }
+
+  /* ================ CSS mobile footer START ================ */
+  #mobile_footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0px;
+    background: #fff;
+    /* background: linear-gradient(145deg, #cacaca, #f0f0f0); */
+    box-shadow: 33px 33px 66px #c7c7c7, -33px -33px 66px hsl(0, 0%, 98%);
+    /* z-index: 2000; */
+  }
+
+  #mobile_footer .footer_box {
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+
+  #mobile_footer .footer_box span {
+    /* background: #cccccc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: #00b207;
+  }
+  /* ================ CSS mobile footer END ================ */
+
+  /* ================ CSS mobile search START ================ */
+  #mobile_search{
+    backdrop-filter: blur(8px);
+    height: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 22;
+    visibility: hidden;
+    opacity: 0;
+  }
+  #mobile_search.mobile_search_active{
+    visibility: visible;
+    opacity: 1;
+  }
+  #mobile_search form{
+    position: relative;
+  }
+  #mobile_search form input{
+    border: none;
+    border-bottom: 2px solid #00b207;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    color:#000;
+    font-size: 18px;
+
+    margin-top: 15%;
+    padding-bottom: 15px;
+  }
+  #mobile_search form input:focus{
+    outline: none;
+  }
+  #mobile_search form button{
+    position: absolute;
+    right: 0px;
+    top: 60%;
+    background: transparent;
+    border: none;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #00b207; */
+  }
+  #mobile_search form .close{
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #00b207;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 0px;
+    border-radius: 50%;
+  }
+  #mobile_search .card_box{
+    border-radius: 05px;
+    box-sizing: border-box;
+  }
+  #mobile_search .card_box .details{
+    padding: 0 10px;
+  }
+  #mobile_search .card_box h4{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gren-gray-scale-700);
+    
+  }
+  /* ================ CSS mobile search END ================ */
+
+
+
 
 
 }

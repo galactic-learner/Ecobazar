@@ -178,6 +178,10 @@ body {
 /* ================ CSS heading 2 END ================ */
 
 /* ================ CSS navigation START ================ */
+#nav{
+  background: var(--gray-scale-gray---50);
+}
+
 #nav .category_bar {
   /* background-color: red; */
   display: inline-flex;
@@ -251,3 +255,6 @@ body {
   /* background-color: red; */
 }
 /* ================ CSS navigation END ================ */
+
+
+

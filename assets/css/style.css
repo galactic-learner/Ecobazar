@@ -210,6 +210,9 @@ body {
   border: none;
   background: #f5f1f1;
 }
+#nav .dropdown-menu.show li{
+  width: 100%;
+}
 #nav .dropdown-menu.show .dropdown-item {
   padding: 8px 10px;
 }

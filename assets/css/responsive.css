@@ -116,7 +116,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
   }
 
   #mobile_footer .footer_box span {
@@ -130,7 +129,7 @@
   /* ================ CSS mobile footer END ================ */
 
   /* ================ CSS mobile search START ================ */
-  #mobile_search{
+  #mobile_search {
     backdrop-filter: blur(8px);
     height: auto;
     position: absolute;
@@ -140,29 +139,29 @@
     visibility: hidden;
     opacity: 0;
   }
-  #mobile_search.mobile_search_active{
+  #mobile_search.mobile_search_active {
     visibility: visible;
     opacity: 1;
   }
-  #mobile_search form{
+  #mobile_search form {
     position: relative;
   }
-  #mobile_search form input{
+  #mobile_search form input {
     border: none;
     border-bottom: 2px solid #00b207;
     width: 100%;
     background-color: transparent;
     padding: 10px;
-    color:#000;
+    color: #000;
     font-size: 18px;
 
     margin-top: 15%;
     padding-bottom: 15px;
   }
-  #mobile_search form input:focus{
+  #mobile_search form input:focus {
     outline: none;
   }
-  #mobile_search form button{
+  #mobile_search form button {
     position: absolute;
     right: 0px;
     top: 60%;
@@ -174,7 +173,7 @@
     justify-content: center;
     /* color: #00b207; */
   }
-  #mobile_search form .close{
+  #mobile_search form .close {
     margin-top: 5px;
     cursor: pointer;
     background-color: #00b207;
@@ -190,25 +189,54 @@
     top: 0px;
     border-radius: 50%;
   }
-  #mobile_search .card_box{
+  #mobile_search .card_box {
     border-radius: 05px;
     box-sizing: border-box;
   }
-  #mobile_search .card_box .details{
+  #mobile_search .card_box .details {
     padding: 0 10px;
   }
-  #mobile_search .card_box h4{
+  #mobile_search .card_box h4 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: var(--gren-gray-scale-700);
-    
   }
   /* ================ CSS mobile search END ================ */
 
 
+  /* ================ CSS features START ================ */
+  /* #features .parent_div_features {
+    
+  } */
+  /* ================ CSS features END ================ */
 
 
+  /* ================ CSS features2 START ================ */
+  /* A. - try */
+  #features {
+    padding: 40px 0;
 
+  }
+
+  /* .parent_div_features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .child_div_feature,
+  .child_div_active {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .child_div_feature img,
+  .child_div_active img {
+    margin: 0 auto 15px;
+  }
+  /* ================ CSS features2 END ================ */
+  
 }

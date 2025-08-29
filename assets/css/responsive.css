@@ -206,50 +206,60 @@
   }
   /* ================ CSS mobile search END ================ */
 
-
   /* ================ CSS banner START ================ */
   #banner {
     text-align: center;
   }
-  #banner .offer{
+  #banner .offer {
     display: none;
   }
-  
-  #banner h6{
+
+  #banner h6 {
     font-size: 20px;
     text-align: center;
   }
-  #banner h2{
+  #banner h2 {
     font-size: 40px;
   }
-  #banner p{
+  #banner p {
     font-size: 16px;
   }
   .slick-dots {
     margin-top: 30px;
     margin-left: -10px;
-
   }
   /* ================ CSS banner END ================ */
-
 
   /* ================ CSS features START ================ */
   /* A. - try */
   #features {
-    padding: 40px 0;
-
+    padding: 20px 0;
+    margin: 10px;
+  }
+  #featured .feature_box:first-child {
+    border-radius: 8px 8px 0 0;
   }
 
-  .child_div_feature,
-  .child_div_active {
-    padding: 20px 15px;
-    text-align: center;
+  #featured .feature_box:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+  #banner .left, .right {
+    visibility: hidden;
   }
 
-  .child_div_feature img,
-  .child_div_active img {
-    margin: 0 auto 15px;
+  #features .feature_box{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    justify-content: center; 
+    
+    text-align: center;         
+    height: 100%;               
+    padding: 20px; 
   }
   /* ================ CSS features END ================ */
-  
 }

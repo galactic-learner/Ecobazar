@@ -130,7 +130,8 @@
 
   /* ================ CSS mobile search START ================ */
   #mobile_search {
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(10px); */
+    background-color: #fff;
     height: auto;
     position: absolute;
     top: 0;
@@ -206,26 +207,38 @@
   /* ================ CSS mobile search END ================ */
 
 
+  /* ================ CSS banner START ================ */
+  #banner {
+    text-align: center;
+  }
+  #banner .offer{
+    display: none;
+  }
+  
+  #banner h6{
+    font-size: 20px;
+    text-align: center;
+  }
+  #banner h2{
+    font-size: 40px;
+  }
+  #banner p{
+    font-size: 16px;
+  }
+  .slick-dots {
+    margin-top: 30px;
+    margin-left: -10px;
+
+  }
+  /* ================ CSS banner END ================ */
+
+
   /* ================ CSS features START ================ */
-  /* #features .parent_div_features {
-    
-  } */
-  /* ================ CSS features END ================ */
-
-
-  /* ================ CSS features2 START ================ */
   /* A. - try */
   #features {
     padding: 40px 0;
 
   }
-
-  /* .parent_div_features {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
 
   .child_div_feature,
   .child_div_active {
@@ -237,6 +250,6 @@
   .child_div_active img {
     margin: 0 auto 15px;
   }
-  /* ================ CSS features2 END ================ */
+  /* ================ CSS features END ================ */
   
 }

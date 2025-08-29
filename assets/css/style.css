@@ -260,7 +260,11 @@ body {
 /* ================ CSS navigation END ================ */
 
 /* ================ CSS banner START ================ */
-#banner .heading1 {
+/* #banner {
+  position: relative;
+} */
+
+#banner h6 {
   margin-top: 70px;
   font-family: var(--second-family);
   font-weight: 400;
@@ -270,77 +274,156 @@ body {
   text-transform: uppercase;
   text-align: left;
   color: var(--branding-success);
+
 }
-#banner .heading2 {
+#banner h2 {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 56px;
   line-height: 120%;
-  color: var(--gren-gray-scale-900);
+  color: var(--green-gray-scale-900);
 }
-#banner .details {
+#banner p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: var(--gren-gray-scale-500);
-  /* margin-bottom: 20px; */
+  color: var(--green-gray-scale-500);
+  
 }
 
-#banner .shop_btn {
+#banner a {
   /* margin-top: 20px; */
-
-  padding: 10px 30px;
-  border-radius: 20px;
-
-  text-align: left;
-  text-decoration: none;
-  cursor: pointer;
   background: var(--branding-success);
   color: #fff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 0;
+  font-size: 16px;
+  text-decoration: none;
+
+  padding: 16px 40px;
+  border-radius: 43px;
+}
+
+#banner a span{
+  margin-left: 16px;
+}
+#banner a:hover{
+  background-color: transparent;
+  outline: 1px solid #00b207;
+  color: #00b207;
+}
+
+#banner .offer_parent {
+  position: relative;
+}
+
+#banner .offer{
+  position: absolute;
+  background: #FF8A00;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  right: 20px;
+  top: 64px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#banner .offer h2{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-white);
+  
+}
+#banner .offer span{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gray-scale-white);
+  
+}
+
+.slick-dots {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+}
+.slick-dots button{
+  background-color: #B4CCB4;
+  color: transparent;
+  width: 12px;
+  height: 12px;
+  border: none;
+  margin: 0 4px;
+
+  border-radius: 20px;
+}
+.slick-dots .slick-active button{
+  background-color: #00B207;
+  width: 25px;
+
+}
+#banner .right{
+  /* background: red; */
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  border: 1px solid #DAE5DA;
+
+  cursor: pointer;
+}
+
+#banner .left{
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  border: 1px solid #DAE5DA;
+
+  cursor: pointer;
+  z-index: 100;
+
 }
 /* ================ CSS banner END ================ */
 
 /* ================ CSS features START ================ */
-
-/* #features .parent_div_features {
-  width: 1320px;
-  height: 222px;
-
-
-
-  display: flex;
-  flex-direction: row;
-
-
-}
-#features .child_div_active{
-
-  background-color: #00b207;
-
-
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 10px;
-  color: #fff;
-  font-family: var(--font-family);
-
-}
-#features .child_div_feature{
-
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 10px;
-  color: #000;
-  font-family: var(--font-family);
-} */
-
 /* min-try */
 
 #features .parent_div_feature {
@@ -381,7 +464,7 @@ body {
 
 /* ================ CSS features2 START ================ */
 /* A. - try */
-/* Features Section Styles */
+/* features section styles */
 #features {
   padding: 60px 0;
   background-color: #fff;
@@ -460,5 +543,4 @@ body {
 .child_div_active p {
   opacity: 0.9;
 }
-
 /* ================ CSS features2 END ================ */

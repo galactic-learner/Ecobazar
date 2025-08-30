@@ -22,6 +22,9 @@ $(function () {
         nextArrow: '<span class="right"><iconify-icon icon="prime:arrow-right" width="24" height="24"></iconify-icon></span>',
         prevArrow: '<span class="left"><iconify-icon icon="prime:arrow-left" width="24" height="24"></iconify-icon></span>',
     });
+
+    // category filter
+    $('.category-button').categoryFilter();
 });
 
 

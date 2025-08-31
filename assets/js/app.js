@@ -1,16 +1,16 @@
 $(function () {
     let mobileSearch = document.querySelector('.mobile_search');
     let searchBody = document.querySelector('#mobile_search');
-    
+
     let searchClose = document.querySelector('.close');
-    
-    
-    mobileSearch.addEventListener('click', function() {
+
+
+    mobileSearch.addEventListener('click', function () {
         searchBody.classList.add('mobile_search_active');
-    
+
     });
-    
-    searchClose.addEventListener('click', function() {
+
+    searchClose.addEventListener('click', function () {
         searchBody.classList.remove('mobile_search_active');
     });
 
@@ -25,6 +25,10 @@ $(function () {
 
     // category filter
     $('.category-button').categoryFilter();
+
+    // Enable tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });
 
 

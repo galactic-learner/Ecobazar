@@ -531,6 +531,7 @@ body {
 /* ================ CSS products START ================ */
 #products {
   margin: 100px 0;
+  height: 100vh;
 }
 
 #products .heading h4 {
@@ -560,7 +561,7 @@ body {
   color: var(--gray-scale-gray---500);
   background: transparent;
   padding: 8px;
-  
+
   border-bottom: 3px solid transparent;
 
   /* display: inline-block; */
@@ -611,22 +612,27 @@ body {
   margin: 0px;
 
 }
-#products .rating li{
+
+#products .rating li {
   color: #FF8A00;
 
 }
-#products .rating .non_active{
+
+#products .rating .non_active {
   color: #cccccc;
 }
-#products .card_contains{
+
+#products .card_contains {
   padding: 0px;
 
 }
-#products .card_details{
+
+#products .card_details {
   display: flex;
 
 }
-#products .card_details .first_content{
+
+#products .card_details .first_content {
   width: 70%;
 }
 
@@ -640,14 +646,16 @@ body {
 
 
 }
+
 #products .card_details b {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: var(--green-gray-scale-900);
-  
+
 }
+
 #products .card_details del {
   font-family: var(--font-family);
   font-weight: 400;
@@ -655,9 +663,10 @@ body {
   line-height: 150%;
   text-decoration: line-through;
   color: var(--green-gray-scale-400);
-  
+
 }
-#products .card_bag{
+
+#products .card_bag {
   background-color: #DAE5DA;
   width: 50px;
   height: 50px;
@@ -668,11 +677,13 @@ body {
   cursor: pointer;
 
 }
-#products .card_bag:hover{
+
+#products .card_bag:hover {
   background-color: #00B207;
   color: #fff;
 }
-#products .icons{
+
+#products .icons {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -690,27 +701,31 @@ body {
   
 } */
 
-#products .icons ul button{
+#products .icons ul button {
   transform: translateX(-60px);
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
 }
-#products .filter:hover .icons ul button{
+
+#products .filter:hover .icons ul button {
   transform: translateX(0px);
   transition: 0.5s;
   visibility: visible;
   opacity: 1;
 
 }
-#products .filter:hover .icons ul li:nth-child(2) button{
+
+#products .filter:hover .icons ul li:nth-child(2) button {
   transition-delay: 0.2s;
 }
-#products .icons ul{
+
+#products .icons ul {
   list-style-type: none;
 
 }
-#products .icons ul button{
+
+#products .icons ul button {
   border: none;
   background-color: transparent;
   width: 40px;
@@ -731,5 +746,29 @@ body {
   --bs-tooltip-color: var(--bs-white);
 }
 
+#products .sale {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #EA4B48;
+
+  padding: 5px 10px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-white);
+
+  border-radius: 4px;
+
+  visibility: hidden;
+  opacity: 0;
+}
+#products .filter:hover .sale {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
 
 /* ================ CSS products END ================ */

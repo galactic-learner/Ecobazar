@@ -264,7 +264,14 @@
   /* ================ CSS features END ================ */
 
   /* ================ CSS products START ================ */
-
+  #products {
+    padding: 20px;
+  }
   /* ================ CSS products END ================ */
 
+  /* ================ CSS VPS START ================ */
+  #various_prod_sale {
+    
+  }
+  /* ================ CSS VPS END ================ */
 }

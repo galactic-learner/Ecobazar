@@ -270,8 +270,32 @@
   /* ================ CSS products END ================ */
 
   /* ================ CSS VPS START ================ */
-  #various_prod_sale {
-    
+  #drink_plus{
+  
   }
   /* ================ CSS VPS END ================ */
+
+  /* ================ CSS timer START ================ */
+  #timer{
+    background-image: none !important;
+    background-color: #EDF2EE;
+    padding: 80px 40px;
+
+  }
+  #timer h4{
+    font-size: 25px;
+  }
+  #timer .timer_parent_box {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 6px;
+
+    margin: 6px;
+  }
+  
+
+
+  /* ================ CSS timer END ================ */
 }

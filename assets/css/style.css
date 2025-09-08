@@ -531,7 +531,7 @@ body {
 /* ================ CSS products START ================ */
 #products {
   margin: 100px 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #products .heading h4 {
@@ -765,6 +765,7 @@ body {
   visibility: hidden;
   opacity: 0;
 }
+
 #products .filter:hover .sale {
   visibility: visible;
   opacity: 1;
@@ -772,3 +773,176 @@ body {
 }
 
 /* ================ CSS products END ================ */
+
+/* ================ CSS drink_plus START ================ */
+#drink_plus {
+  margin-top: 300px;
+  padding: 40px;
+}
+
+#drink_plus .banner_one {
+  width: calc(33.33%-12px);
+  background-image: url('../images/drinks_plus/1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-right: 8px; */
+  padding: 28px 24px;
+  width: 424px;
+  height: 255px;
+}
+
+#drink_plus .banner_two {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  width: calc(33.33%-12px);
+  background-image: url('../images/drinks_plus/2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-right: 8px; */
+  padding: 28px 24px;
+  width: 424px;
+  height: 255px;
+  text-align: left;
+}
+
+#drink_plus .banner_three {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: calc(33.33%-12px);
+  background-image: url('../images/drinks_plus/3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-right: 8px; */
+  padding: 28px 24px;
+  width: 424px;
+  height: 255px;
+}
+
+/* ================ CSS drink_plus END ================ */
+
+/* ================ CSS START ================ */
+#timer {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#timer .container {
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+
+}
+
+#timer p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--branding-success);
+
+}
+
+#timer h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+
+}
+
+#timer a {
+  margin-top: 20px;
+  background: var(--branding-success);
+  color: #fff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 0;
+  font-size: 16px;
+  text-decoration: none;
+
+  padding: 16px 40px;
+  border-radius: 43px;
+}
+
+#timer a span {
+  margin-left: 16px;
+}
+
+#timer a:hover {
+  background-color: transparent;
+  outline: 1px solid #00b207;
+  color: #00b207;
+}
+
+#timer .parent {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+
+  margin: 32px 0;
+
+
+}
+
+#timer .timer_box {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--branding-success);
+
+}
+
+#timer .timer_parent_box {
+  background: #fff;
+  width: 96px;
+  height: 96px;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+
+#timer .timer_parent_box span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--green-gray-scale-500);
+
+}
+#timer .timer_parent_box::after{
+  content: ':';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -9%;
+}
+#timer .timer_parent_box:last-child::after{
+  display: none;
+}
+/* ================ CSS END ================ */

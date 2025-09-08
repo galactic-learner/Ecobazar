@@ -29,6 +29,24 @@ $(function () {
     // Enable tooltips
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    // ad (not fully integrated)
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.querySelector('.ad').classList.add('ad-active');
+        }, 2000);
+    });
+
+    // timer
+    $("#getting-started")
+        .countdown("2025/09/10", function (event) {
+            // $(this).text(event.strftime('%W weeks %D days %H:%M:%S'));
+            $('.sec').text(event.strftime('%S'));
+            $('.min').text(event.strftime('%M'));
+            $('.hour').text(event.strftime('%H'));
+            $('.day').text(event.strftime('%D'));
+        });
+
 });
 
 

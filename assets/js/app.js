@@ -39,7 +39,7 @@ $(function () {
 
     // timer
     $("#getting-started")
-        .countdown("2025/09/10", function (event) {
+        .countdown("2026/09/10", function (event) {
             // $(this).text(event.strftime('%W weeks %D days %H:%M:%S'));
             $('.sec').text(event.strftime('%S'));
             $('.min').text(event.strftime('%M'));

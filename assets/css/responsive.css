@@ -295,7 +295,17 @@
     margin: 6px;
   }
   
-
-
   /* ================ CSS timer END ================ */
+
+  /* ================ CSS image slider START ================ */
+  #product_details .slick-list.draggable{
+    width: 100%;
+  }
+  .magnifier{
+    border: 1px solid #00b207 !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  /* ================ CSS image slider END ================ */
+  
 }

@@ -47,6 +47,53 @@ $(function () {
             $('.day').text(event.strftime('%D'));
         });
 
+    // ad section
+    // window.addEventListener('load', function () {
+
+    // }
+
+
+    // zoom
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        vertical: true,
+        dots: false,
+        centerMode: false,
+        centerPadding: '0px',
+        arrows: true,
+        prevArrow: '<span class="top"><iconify-icon icon="iconamoon:arrow-up-2-thin" width="24" height="24"></iconify-icon></span>',
+        nextArrow: '<span class="down"><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24" height="24"></iconify-icon></span>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                vertical: false,
+                arrows: false,
+                }
+            },
+        ]
+    });
+
+    // ZOOMSL
+    $(function(){
+        $(".example").imagezoomsl();
+    });
+
+
 });
 
 

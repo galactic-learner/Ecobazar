@@ -827,7 +827,7 @@ body {
 
 /* ================ CSS drink_plus END ================ */
 
-/* ================ CSS START ================ */
+/* ================ CSS timer START ================ */
 #timer {
   height: 400px;
   background-repeat: no-repeat;
@@ -945,4 +945,26 @@ body {
 #timer .timer_parent_box:last-child::after{
   display: none;
 }
-/* ================ CSS END ================ */
+/* ================ CSS timer END ================ */
+
+
+/* ================ CSS ad START ================ */
+
+/* ================ CSS ad END ================ */
+
+
+/* ================ CSS porduct details - image START ================ */
+#product_details .slider-nav div{
+  width: 80px;
+}
+#product_details .slick-vertical{
+  padding-left: 20px;
+}
+#product_details .top{
+  margin-left: 32px;
+}
+#product_details .down{
+  margin-left: 32px;
+}
+
+/* ================ CSS porduct details - image END ================ */

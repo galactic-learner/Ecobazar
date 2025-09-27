@@ -968,3 +968,22 @@ body {
 }
 
 /* ================ CSS porduct details - image END ================ */
+
+/* ================ CSS footer START ================ */
+#footer {
+  background: var(--gray-scale-gray---900);
+  color: var(--gray-scale-gray---50);
+  padding: 60px 0;
+  margin-top: 100px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--gray-scale-gray---50);
+  
+}
+
+#footer a:hover {
+  color: var(--branding-success);
+}
+/* ================ CSS footer END ================ */

@@ -970,7 +970,7 @@ body {
 /* ================ CSS porduct details - image END ================ */
 
 /* ================ CSS footer START ================ */
-#footer {
+/*#footer {
   background: var(--gray-scale-gray---900);
   color: var(--gray-scale-gray---50);
   padding: 60px 0;
@@ -979,11 +979,119 @@ body {
 
 #footer a {
   text-decoration: none;
+  list-style: none;
   color: var(--gray-scale-gray---50);
   
+}*/
+
+/*#footer a:hover {
+  color: var(--branding-success);
+}*/
+
+
+
+/* (A. - try) */
+
+/* footer */
+#footer{
+  background: var(--gray-scale-gray---900);
+
+  color: var(--gray-scale-gray---500);
+  padding: 60px 0;
+  margin-top: 100px;
+
 }
 
-#footer a:hover {
-  color: var(--branding-success);
+#footer .first .contains{
+    margin: 16px 0;
 }
+
+#footer .first p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray---500);
+}
+
+#footer .first p b{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    box-shadow: 0 1px 0 0 #20b526;
+    background: var(--gray-scale-gray---900);
+    padding: 6px 0px;
+}
+
+#footer .first p b:first-child{
+    margin-right: 8px;
+}
+
+#footer .first p b:last-child{
+    margin-left: 8px;
+}
+
+#footer .others h4{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    margin-bottom: 20px;
+}
+
+#footer .others ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .others ul li{
+
+    margin-bottom: 12px;
+}
+
+#footer .others ul li a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray---400);
+}
+
+#footer .others ul li a:hover{
+    color: var(--gray-scale-white);
+}
+
+#footer .first_row{
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--gray-scale-gray---800);
+}
+
+#footer .second_row{
+  margin-top: 40px;
+  padding-top: 20px;
+
+}
+
+#footer .second_row p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray---500);
+    margin: 0;
+}
+
+#footer .second_row .payment{
+    text-align: right;
+}
+
+/* footer end */
+
+/* (A. - try)- end */
+
 /* ================ CSS footer END ================ */

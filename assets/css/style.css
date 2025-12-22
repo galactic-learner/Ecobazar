@@ -984,7 +984,15 @@ body {
 #featured_products {
   padding: 80px 0;
 }
-
+#featured_products  .head h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+  margin-bottom: 40px;
+}
 #featured_products .filter_body{
   width: 20%;
 }

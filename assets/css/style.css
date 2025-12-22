@@ -1231,6 +1231,25 @@ body {
 
 /* ================ CSS featured products END ================ */
 
+/* ================ CSS product_details START ================ */
+#product_details{
+  /* font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--gray-scale-gray---900);
+  margin-bottom: 16px; */
+}
+#product_details .rate{
+  /* display: flex; */
+}
+#product_details{
+
+}
+
+/* ================ CSS product_details END ================ */
+
+
 /* ================ CSS footer START ================ */
 
 /* breadcrumb */
